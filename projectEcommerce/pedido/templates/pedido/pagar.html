@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Pagamento | {% endblock %}
+
+{% load rmfilters %}
+{% load static %}
+
+{% block conteudo %}
+<div class="row">
+    <div class="col">
+        <!-- Adicionado 'mb-4' à classe 'h3' para margem inferior -->
+        <h3 class="mb-4">Escolha o método de pagamento</h3>
+        <!-- Adicionado orientação para o desenvolvedor -->
+        <p>Para o desenvolvedor: adicione seu método de pagamento preferido.</p>
+    </div>
+</div>
+
+{% include 'parciais/_pedido.html' %}
+
+<div class="row mt-4">
+    <div class="col">
+        <!-- Alterado para botão desabilitado com a classe 'btn-secondary' -->
+        <a href="#" class="btn btn-secondary btn-block btn-lg" disabled>Pagar</a>
+        <!-- Adicionado comentário sobre o botão desabilitado -->
+        <small class="form-text text-muted">O pagamento estará disponível em breve.</small>
+    </div>
+</div>
+
+{% endblock %}

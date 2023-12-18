@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Configuração local
+*.env
+local_settings.py
+
+# Diretório de mídia
+media/
+
+# Arquivos de log
+*.log
+
+# Dependências
+venv/
+lib/
+*.pyc
+*.pyo
+*.pyd
+
+# Diretórios de dados temporários
+*.swp
+.vscode/
+
+# Arquivos de configuração de IDEs
+*.pyproj
+*.pidb
+*.suo
+*.user
+.idea/
+
+# SQLite
+db.sqlite3
+
+# Diretórios de cache
+__pycache__/
+.pytest_cache/
+
+# Ambientes virtuais
+venv/
+env/
+*.venv/
+*.env/
+
+# Outros
+.DS_Store
+node_modules/
